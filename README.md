@@ -99,7 +99,7 @@ A detailed analysis of baby names in USA from 1980 to 2009.
 |1980|Rowan|5772|2009|Rowan|445|-5327|
 
 ### OBJECTIVE 2: Compare popularity across decades
-#### Your second objective is to find the top 3 girl names and top 3 boy names for each year, and also for each decade.
+#### The second objective is to find the top 3 girl names and top 3 boy names for each year, and also for each decade.
 ##### 1. For each year, return the 3 most popular girl names and 3 most popular boy names
 ##### Query
 ` SELECT * FROM `  
@@ -139,7 +139,7 @@ A detailed analysis of baby names in USA from 1980 to 2009.
 |1980s|F|Amanda|369705|3|
 
 ### OBJECTIVE 3: Compare popularity across regions
-#### Your third objective is to find the number of babies born in each region, and also return the top 3 girl names and top 3 boy names within each region.
+#### The third objective is to find the number of babies born in each region, and also return the top 3 girl names and top 3 boy names within each region.
 ##### 1. Return the number of babies born in each of the six regions (NOTE: The state of MI should be in the Midwest region)
 ##### Query
 ` WITH clean_regions AS (SELECT State, `   
@@ -186,7 +186,7 @@ A detailed analysis of baby names in USA from 1980 to 2009.
 |Mid_Atlantic|F|Ashley|2|
 |Mid_Atlantic|F|Jennifer|3|
 ### OBJECTIVE 4: Explore unique names in the dataset
-#### Your final objective is to find the most popular androgynous names, the shortest and longest names, and the state with the highest percent of babies named "Chris".
+#### Final objective is to find the most popular androgynous names, the shortest and longest names, and the state with the highest percent of babies named "Chris".
 ##### 1. Find the 10 most popular androgynous names (names given to both females and males).
 ##### Query
 ` SELECT Name, COUNT(DISTINCT Gender) AS num_genders, SUM(Births) AS num_babies `  
